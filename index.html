@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certification Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Certifications</h1>
+        </header>
+
+        <section id="certifications-list">
+            <!-- Certification items will be added here dynamically -->
+        </section>
+
+        <footer>
+            <button id="add-cert-btn">Add Certification</button>
+        </footer>
+    </div>
+
+    <!-- Modal for adding new certification -->
+    <div id="add-cert-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Certification</h2>
+            <form id="cert-form">
+                <label for="cert-name">Certification Name:</label>
+                <input type="text" id="cert-name" required>
+                
+                <label for="cert-date">Date Issued:</label>
+                <input type="date" id="cert-date" required>
+                
+                <label for="cert-org">Issuing Organization:</label>
+                <input type="text" id="cert-org" required>
+
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
